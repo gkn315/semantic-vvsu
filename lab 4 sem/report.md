@@ -2,7 +2,7 @@
 
 ## Что сделано
 
-Расширен фитнес-тренер из лабы 3. Добавлены три механизма: Skills, JSON Structured Output и MCP-сервер.
+Расширен фитнес-тренер из лабораторной работы 3. Добавлены три механизма: Skills, JSON Structured Output и MCP-сервер.
 
 ## 1. JSON Structured Output
 
@@ -41,13 +41,3 @@ BASE_PROMPT (всегда)
 
 `langchain`, `langchain-groq`, `fastapi`, `uvicorn`, `pydantic`, `mcp`, `langchain-mcp-adapters`, `python-dotenv`
 
-## Запуск
-
-```bash
-pip install langchain langchain-groq fastapi uvicorn mcp langchain-mcp-adapters python-dotenv
-
-# скопировать .env.example -> .env и вставить ключ
-
-python app.py          # FastAPI сервер на порту 8000
-python mcp_demo.py     # демо MCP-сервера
-```
