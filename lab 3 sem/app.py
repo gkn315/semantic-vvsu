@@ -17,3 +17,8 @@ class ChatResponse(BaseModel):
 @app.post("/generate", response_model=ChatResponse)
 async def generate(req: ChatRequest):
     return ChatResponse(response=ask(req.message))
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
